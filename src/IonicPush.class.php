@@ -29,9 +29,9 @@
          *
         */
 
-        public function __construct ($SettingArray){
+        public function __construct (array $SettingArray){
 
-            if ( is_array( $SettingArray ) )  {
+            if ($SettingArray)  {
                 self::setProfile($SettingArray['profileName']);
                 self::setAuth($SettingArray['AuthKey']);
             } else {
